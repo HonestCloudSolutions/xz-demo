@@ -81,7 +81,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: msachdeva/xz-repo:latest
+          tags: msachdeva/xz-repo:dta
 
       - name: Manifest Generation
         run: |
@@ -98,7 +98,7 @@ jobs:
             --access-token "${{ secrets.GITHUB_TOKEN }}" \
             --aqua-key "${{ secrets.AQUA_KEY }}" \
             --aqua-secret "${{ secrets.AQUA_SECRET }}" \
-            --artifact-path "msachdeva/xz-repo:latest"
+            --artifact-path "msachdeva/xz-repo:dta"
 
             # The docker image name:tag of the newly built image
             # --artifact-path "my-image-name:${{ env.tag-version }}"

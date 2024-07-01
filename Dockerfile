@@ -1,4 +1,5 @@
-FROM nginx:1.7.1
+FROM debian:unstable-20240311
+#inginx:1.7.1
 
 # Update the package repository
 #RUN apt-get update
