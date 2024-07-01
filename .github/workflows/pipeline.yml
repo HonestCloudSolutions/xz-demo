@@ -53,7 +53,7 @@ jobs:
             --access-token "${{ secrets.GITHUB_TOKEN }}" \
             --aqua-key "${{ secrets.AQUA_KEY }}" \
             --aqua-secret "${{ secrets.AQUA_SECRET }}" \
-            --artifact-path "msachdeva/xz-repo:dta:${{ env.tag-version }}"
+            --artifact-path "msachdeva/xz-repo:${{ env.tag-version }}"
 
             # The docker image name:tag of the newly built image
             # --artifact-path "my-image-name:${{ env.tag-version }}"
